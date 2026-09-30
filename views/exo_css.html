@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Grid vs Flexbox</title>
+    <link rel="stylesheet" href="../css/exo_css.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Section 1 : Navigation principale -->
+      <section class="section-navbar">
+        <h2>Navigation principale</h2>
+        <nav class="navbar">
+          <a href="#" class="logo">TechPro</a>
+          <!-- Menu burger en CSS pur (case à cocher cachée) -->
+          <input type="checkbox" id="burger-toggle" class="burger-toggle" />
+          <label for="burger-toggle" class="burger" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="nav-links">
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="#">Produits</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="#" class="link-login">Se connecter</a>
+            <a href="#" class="btn">S'inscrire</a>
+          </div>
+        </nav>
+        <p class="justification">
+          <span>Justification :</span> Flexbox, car les éléments sont alignés
+          sur une seule dimension (une ligne) avec un espacement flexible.
+        </p>
+      </section>
+
+      <!-- Section 2 : Nos formations populaires -->
+      <section class="section-formations">
+        <h2>Nos formations populaires</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-img">JavaScript</div>
+            <div class="card-meta">
+              <span class="badge">Développement</span>
+              <span>12h de cours</span>
+            </div>
+            <h3>JavaScript Moderne</h3>
+            <p>Maîtrisez ES6+, async/await et les frameworks modernes</p>
+            <div class="card-footer">
+              <strong>299 €</strong>
+              <a href="#" class="btn">S'inscrire</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img card-img-xl">React</div>
+            <div class="card-meta">
+              <span class="badge">Framework</span>
+              <span>15h de cours</span>
+            </div>
+            <h3>React Avancé</h3>
+            <p>Créez des applications web performantes avec React</p>
+            <div class="card-footer">
+              <strong>399 €</strong>
+              <a href="#" class="btn">S'inscrire</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">Node.js</div>
+            <div class="card-meta">
+              <span class="badge">Backend</span>
+              <span>18h de cours</span>
+            </div>
+            <h3>Node.js &amp; Express</h3>
+            <p>Développez des API REST et applications serveur</p>
+            <div class="card-footer">
+              <strong>449 €</strong>
+              <a href="#" class="btn">S'inscrire</a>
+            </div>
+          </article>
+        </div>
+        <p class="justification">
+          <span>Justification :</span> Grid pour la grille de cartes (colonnes
+          de même largeur), Flexbox à l'intérieur de chaque carte.
+        </p>
+      </section>
+
+      <!-- Section 3 : Article à la une -->
+      <section class="section-article">
+        <h2>Article à la une</h2>
+        <article class="article">
+          <div class="article-img">Intelligence Artificielle</div>
+          <div class="article-content">
+            <div class="card-meta">
+              <span class="badge">Technologies</span>
+              <span>10 min de lecture</span>
+            </div>
+            <h3>L'Impact de l'IA sur le Développement Web en 2024</h3>
+            <p>
+              L'intelligence artificielle révolutionne la façon dont nous
+              concevons et développons des applications web. Découvrez les
+              dernières innovations et leur impact sur l'industrie du
+              développement...
+            </p>
+            <div class="author">
+              <span class="avatar">ML</span>
+              <div>
+                <strong>Marie Laurent</strong>
+                <small>Lead Developer @ TechPro</small>
+              </div>
+            </div>
+          </div>
+        </article>
+        <p class="justification">
+          <span>Justification :</span> Flexbox, car on place simplement une
+          image à côté d'un bloc de contenu.
+        </p>
+      </section>
+
+      <!-- Section 4 : Technologies maîtrisées -->
+      <section class="section-technos">
+        <h2>Technologies maîtrisées</h2>
+        <ul class="tags">
+          <li>React.js</li>
+          <li>Vue.js</li>
+          <li>Node.js</li>
+          <li>TypeScript</li>
+          <li>Python</li>
+          <li>Docker</li>
+          <li>AWS</li>
+        </ul>
+        <p class="justification">
+          <span>Justification :</span> Flexbox avec flex-wrap : des éléments de
+          tailles variables centrés sur une ligne.
+        </p>
+      </section>
+
+      <!-- Section 5 : Nos projets réalisés -->
+      <section class="section-projets">
+        <h2>Nos projets réalisés</h2>
+        <div class="projets">
+          <div class="projet">Inspiration Visuelle</div>
+          <div class="projet">Grille Créative</div>
+          <div class="projet">Moodboard Produits</div>
+          <div class="projet">Univers en images</div>
+          <div class="projet projet-large">Collection en un coup d'œil</div>
+        </div>
+        <p class="justification">
+          <span>Justification :</span> Grid, car la mise en page est en deux
+          dimensions (lignes et colonnes) avec un élément sur 2 colonnes.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
