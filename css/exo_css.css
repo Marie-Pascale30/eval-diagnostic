@@ -26,6 +26,8 @@ body {
 
 section {
   margin-bottom: 47.8px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 /* À vous d'ajouter les sélecteurs et propriétés nécessaires
@@ -311,6 +313,10 @@ h3 {
   font-size: 22px;
   font-weight: 600;
   padding: 16px;
+}
+
+.projet-large{
+  padding: 30px;
 }
 
 /* =====================================================
